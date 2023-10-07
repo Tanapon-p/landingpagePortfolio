@@ -1,3 +1,4 @@
 export { Home } from "./Home";
-export { Projects } from "./Projects";
+export { AllProjects } from "./AllProjects";
 export { Contact } from "./Contact";
+export { ProjectSinglePage } from "./ProjectSinglePage";

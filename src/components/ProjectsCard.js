@@ -1,10 +1,11 @@
 import React from "react";
-import projectPic from "../assets/2777.png";
+import { Link } from "react-router-dom";
 
-export const ProjectsCard = () => {
+export const ProjectsCard = ({ project }) => {
+  const { title, image, details,id } = project;
   return (
     <div
-      className="flex flex-col items-center bg-white border border-gray-200 w-full sm:
+      className="flex flex-col items-center my-4 bg-white border border-gray-200 w-full sm:
     rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
     >
       {/* <a
@@ -14,18 +15,15 @@ export const ProjectsCard = () => {
       > */}
       <img
         className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-        src={projectPic}
+        src={image}
         alt=""
       />
       <div className="flex flex-col justify-between p-4 leading-normal w-full">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          Noteworthy technology acquisitions 2021
+          {title}
         </h5>
         <p className="mb-7 font-normal text-gray-700 dark:text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, culpa amet
-          id maiores laudantium beatae necessitatibus doloremque deserunt nihil
-          sit repudiandae fugiat adipisci cum fugit autem dignissimos rerum ab
-          cupiditate!
+          {details}
         </p>
         <div className="flex justify-end md:justify-start">
           <button
@@ -62,12 +60,14 @@ export const ProjectsCard = () => {
             </svg>
             Live Demo
           </button>
-          <button
-            type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          >
-            Read more
-          </button>
+          <Link to={`/projects/${id}`}>
+            <button
+              type="button"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Read more
+            </button>
+          </Link>
         </div>
       </div>
 
