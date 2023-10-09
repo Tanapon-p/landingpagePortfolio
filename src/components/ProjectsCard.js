@@ -22,9 +22,9 @@ export const ProjectsCard = ({ project }) => {
           {details}
         </p>
         <div className="flex flex-col my-4 justify-center  ">
-          <div className="flex w-12">
+          <div className="flex">
             {project.skills.map((skills, skillIndex) => (
-              <div className="mr-4">
+              <div key={skillIndex} className="mr-4 dark:text-white">
                 <img
                   src={skills}
                   key={skillIndex}
@@ -80,7 +80,7 @@ export const ProjectsCard = ({ project }) => {
               type="button"
               className="h-12 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
-              Read more
+              Read More
             </button>
           </Link>
         </div>

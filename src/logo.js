@@ -36,6 +36,44 @@ export const logo = [
   },
 ];
 
+export const softskills = [
+  {
+    id: 1,
+    name: "Problem Solving",
+    image: "assets/icon/softskills/problemSolving.png",
+  },
+  {
+    id: 2,
+    name: "Critical Thinking",
+    image: "assets/icon/softskills/critical-thinking.png",
+  },
+  {
+    id: 3,
+    name: "Self Learning",
+    image: "assets/icon/softskills/self-learning.png",
+  },
+  {
+    id: 4,
+    name: "Teamwork",
+    image: "assets/icon/softskills/teamwork.png",
+  },
+  {
+    id: 5,
+    name: "Interpersonal",
+    image: "assets/icon/softskills/interpersonal.png",
+  },
+  {
+    id: 6,
+    name: "Time Management",
+    image: "assets/icon/softskills/time-management.png",
+  },
+  {
+    id: 7,
+    name: "Creative Idea",
+    image: "assets/icon/softskills/creative-idea.png",
+  },
+];
+
 export const projectPic = [
   {
     id: 1,
@@ -103,15 +141,17 @@ export const projectDetails = [
     id: 3,
     title: "Goalgrid-Tp",
     image: "/assets/projectPic/project3.png",
-    details: `&emsp; Building a basic to-do web app like Goalgrid with React.js is an excellent way to gain hands-on experience in web development. This project involves working with React components, state management, and user interactions, which are fundamental skills for web developers. 
+    details: `&emsp;GoalGrid offers a user-friendly interface designed for effortless task management. It enables easy task addition, editing, and deletion. With the flexibility to switch templates and a responsive design, 
+    GoalGrid seamlessly adapts to desktops, tablets, and mobile devices, ensuring efficient task management on the go.`,
+    details2: `&emsp; Building a basic to-do web app like Goalgrid with React.js is an excellent way to gain hands-on experience in web development. This project involves working with React components, state management, and user interactions, which are fundamental skills for web developers. 
     <br/><br/> &emsp;Creating a Goalgrid encourages to think about responsive design. I can learn how to make the app look and function well on various devices and screen sizes, which is crucial in today's mobile-first world.
     <br/><br/> &emsp;Additionally, deploying the app to hosting services like Netlify offers valuable experience in setting up domains, configuring servers, and managing deployment pipelines. Moreover, it provides an opportunity to practice version control using Git and GitHub, fostering collaboration, branch management, and effective code tracking.
     `,
-    details2: `&emsp;GoalGrid offers a user-friendly interface designed for effortless task management. It enables easy task addition, editing, and deletion. With the flexibility to switch templates and a responsive design, 
-    GoalGrid seamlessly adapts to desktops, tablets, and mobile devices, ensuring efficient task management on the go.`,
     details3: `&emsp;In conclusion, creating a basic to-do web app with React.js provided me, as an aspiring web developer, with a well-rounded learning experience. This project not only helped me become proficient in React components, state management, 
     and user interaction but also exposed me to vital aspects of modern web development.
     <br/><br/> &emsp; Deploying the app to hosting services and mastering version control with Git and GitHub further 
     enriched my skill set. Ultimately, I gained practical know-how and experience that I need in web development.`,
+    link: "https://goalgrid-tp.netlify.app/",
+    githubLink: "https://github.com/Tanapon-p/Goalgrid-tp",
   },
 ];
