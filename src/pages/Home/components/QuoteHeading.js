@@ -2,7 +2,7 @@ import React from "react";
 
 export const QuoteHeading = () => {
   const PDF_FILE_URL =
-    "http://localhost:3000/Tanapon-Frontend Developer-Resume.pdf";
+    "https://tanapon-portfolio.netlify.app/Tanapon-Frontend Developer-Resume.pdf";
   function downloadFilePDF(url) {
     fetch(url)
       .then((response) => response.blob)
