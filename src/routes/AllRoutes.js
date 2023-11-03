@@ -4,7 +4,6 @@ import {
   Contact,
   Home,
   AllProjects,
-  ProjectSinglePage,
   Projects3,
   Projects1,
   Projects2,

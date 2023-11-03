@@ -1,6 +1,6 @@
 import React from "react";
 import { SkillsCard } from "./SkillsCard";
-import { logo, softskills } from "../../data";
+import { logo } from "../../data";
 
 export const Skills = () => {
   return (
