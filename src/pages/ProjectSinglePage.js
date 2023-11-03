@@ -1,12 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useTitle } from "../hooks/useTitle";
-import { projectDetails } from "../logo";
-import ProjectDetails from "../components/ProjectsDetails";
+import { projectDetails } from "../data";
+import ProjectDetails from "../components/project/ProjectsDetails";
 
 export const ProjectSinglePage = () => {
   const params = useParams();
-  console.log(params);
   useTitle(`project ${params.id}`);
 
   const project = projectDetails.find(
@@ -20,16 +19,14 @@ export const ProjectSinglePage = () => {
   const { title, image, details, details2, details3, link, githubLink } =
     project;
 
-  console.log(image);
-
   return (
     <main>
-      <section>
+      <section className="dark:text-white">
         <h1 className="mb-7 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           {title}
         </h1>
         <div>
-          <img className="my-7" src={image} alt={title} />
+          <img className="my-7 rounded-xl" src={image} alt={title} />
         </div>
         <div className="my-16">
           <h2 className="my-4 font-bold text-4xl md:text-5xl">
@@ -93,10 +90,10 @@ export const ProjectSinglePage = () => {
               Try it yourself
             </button>
           </a>
-          <a href={link} target="_blank" rel="noreferrer">
+          <a href={githubLink} target="_blank" rel="noreferrer">
             <button
               type="button"
-              className="h-12 flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              className="h-12 flex items-center text-white bg-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

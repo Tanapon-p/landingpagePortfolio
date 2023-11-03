@@ -1,6 +1,6 @@
-export { Header } from "./Header";
-export { Footer } from "./Footer";
-export { Avatar } from "./Avatar";
-export { Skills } from "./Skills";
-export { Projects } from "./Projects";
-export { ContactCard } from "./ContactCard";
+export { Header } from "./layout/Header";
+export { Footer } from "./layout/Footer";
+
+export { Skills } from "./skills/Skills";
+export { Projects } from "./project/Projects";
+export { ContactCard } from "./contact/ContactCard";
