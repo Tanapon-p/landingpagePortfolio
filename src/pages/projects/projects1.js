@@ -95,7 +95,7 @@ export const Projects1 = () => {
           </p>
           <div className="flex justify-center">
             <a
-              href="https://goalgrid-tp.netlify.app/"
+              href="https://codebook-tp.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -134,7 +134,7 @@ export const Projects1 = () => {
               </button>
             </a>
             <a
-              href="https://github.com/Tanapon-p/Goalgrid-tp"
+              href="https://github.com/Tanapon-p/codebookecommerce"
               target="_blank"
               rel="noreferrer"
             >

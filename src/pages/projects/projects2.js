@@ -97,7 +97,7 @@ export const Projects2 = () => {
         </div>
         <div className="flex justify-center">
           <a
-            href="https://goalgrid-tp.netlify.app/"
+            href="https://cinemalover-tp.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -136,7 +136,7 @@ export const Projects2 = () => {
             </button>
           </a>
           <a
-            href="https://github.com/Tanapon-p/Goalgrid-tp"
+            href="https://github.com/Tanapon-p/cinemalover"
             target="_blank"
             rel="noreferrer"
           >
